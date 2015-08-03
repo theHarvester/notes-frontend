@@ -1,0 +1,39 @@
+{
+  "name": "lugger",
+  "version": "0.0.1",
+  "description": "Standalone http tester for all environments",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --proxy \"myproject.dev\" --files \"css/*.css\""
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": "https://github.com/wholemealcode/lugger",
+  "devDependencies": {
+    "babelify": "^6.1.0",
+    "browser-sync": "^2.7.13",
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-less": "^3.0.3",
+    "gulp-util": "^3.0.5",
+    "jquery": "^2.1.4",
+    "lodash": "^3.9.3",
+    "material-ui": "^0.8.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.2"
+  },
+  "dependencies": {},
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
+    ]
+  }
+}
